@@ -6,7 +6,25 @@
 <title>SOLANIME — The First Anime Series for Solana Memecoins</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Nunito:wght@400;700;900&family=Permanent+Marker&display=swap" rel="stylesheet">
-<style>
+<audio id="bg-music" loop>
+  <source 
+    src="bg music.mp3"
+    type="audio/mp3">
+</audio>
+
+<button id="enter-btn">ENTER SOLANIME</button>
+
+<script>
+const music = document.getElementById("bg-music");
+const btn = document.getElementById("enter-btn");
+
+btn.addEventListener("click", () => {
+    music.play();
+    btn.style.display = "none";
+});
+</script>
+  
+  <style>
   :root {
     --anime-purple: #7C3AED;
     --anime-pink: #EC4899;
